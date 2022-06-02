@@ -1,0 +1,75 @@
+div{
+  height: 100px;
+  width: 100px;
+
+}
+
+
+
+.firstTranslate{
+  background-color: black;
+  animation-iteration-count: infinite;
+}
+.firstTranslate:hover{
+  transform: translate(50px,50px);
+}
+
+.firstRotate{
+  background-color: red;
+}
+
+.firstRotate:hover{
+  transform: rotate(45deg);
+}
+
+.firstScale{
+  background-color: green;
+  border-radius: 50%;
+  animation: scaleIn 3s 2s infinite forwards, bounce 2s;
+}
+
+@keyframes scaleIn{
+  from{ transform: scale(0,0);}
+  to{transform: scale(1,1);}
+}
+
+.firstScale:hover{
+  /* transform: scale(.2,.2); scale down */
+  transform: scale(2,3); /*scale up8*/
+}
+
+.firstRotate3D{
+  background-color: coral;
+  transition: transform 3s;
+  animation: rotatediv .5s infinite linear alternate;
+}
+@keyframes rotatediv{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+
+.firstRotate3D:hover{
+  transform: rotateY(360deg);
+}
+
+div.wave{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  /* border-radius: 66% 34% 37% 63%/ 57% 31% 69% 43%; */
+  animation: wave 3s linear 5;
+}
+
+
+@keyframes wave{
+  0%, 100%{ border-radius: 66% 34% 37% 63%/ 57% 31% 69% 43%;}
+  /* 50%{border-radius: 23% 37% 51% 43%/22% 53% 47% 78%;} */
+}
+/* div.wave1{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  /* border-radius: 23% 37% 51% 43%/22% 53% 47% 78%; */
+  /* transform: rotateX(30deg);
+} */

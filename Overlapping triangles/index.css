@@ -1,0 +1,31 @@
+.container div{
+  /* height: 100px;
+  width: 100px; */
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first{
+  border-bottom: 100px solid royalblue;
+  position: relative;
+  z-index: 0;
+}
+
+.sec{
+  border-bottom: 100px solid red;
+  position: absolute;
+  top: 8%;
+  z-index: -1;
+}
+
+.third{
+  border-bottom: 100px solid green;
+  position: absolute;
+  top: 16%;
+  z-index: -2;
+}

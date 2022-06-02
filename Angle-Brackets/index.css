@@ -1,0 +1,29 @@
+h1{
+  width: 70%;
+  margin: 50px auto;
+  background-color: brown;
+
+}
+
+h1::before{
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  top: 5%;
+  left: 10%;
+}
+
+h1::after{
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  right: 10%;
+}
+
+textarea :is(:focus, :valid)
